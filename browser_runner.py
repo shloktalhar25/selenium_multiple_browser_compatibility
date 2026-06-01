@@ -2,6 +2,7 @@
 
 # Initializes Selenium Remote webdrivers for requested browsers and executes
 # tests in parallel using threading.
+# the option fior headless is also written
 
 
 import threading
@@ -30,7 +31,7 @@ def get_browser_options(browser_name):
     elif name == "firefox":
         options = FirefoxOptions()
         if config.HEADLESS:
-            options.add_argument("--headless")
+            options.add_argument("--headless") 
         return options
     elif name == "edge":
         options = EdgeOptions()
