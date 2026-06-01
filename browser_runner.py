@@ -1,10 +1,8 @@
-# browser_runner.py
+# Browser Runner Module.
 
-"""Browser Runner Module.
+# Initializes Selenium Remote webdrivers for requested browsers and executes
+# tests in parallel using threading.
 
-Initializes Selenium Remote webdrivers for requested browsers and executes
-tests in parallel using threading.
-"""
 
 import threading
 import logging
