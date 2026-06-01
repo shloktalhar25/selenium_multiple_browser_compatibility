@@ -23,3 +23,18 @@ Verifying successful login.
 Navigating through application pages.
 Interacting with user profile elements.
 Logging out and verifying redirection
+
+
+TO RUN
+```
+java -jar selenium-server-standalone-<version>.jar
+```
+```
+# config.py
+# Headless mode toggle (True to hide browser windows, False to show them)
+HEADLESS = False (in our case)
+```
+```
+python main.py
+```
+
