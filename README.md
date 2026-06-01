@@ -27,7 +27,7 @@ Logging out and verifying redirection
 
 TO RUN
 ```
-java -jar selenium-server-standalone-<version>.jar
+java -jar selenium-server-4.44.0.jar standalone
 ```
 ```
 # config.py
