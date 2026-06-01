@@ -1,13 +1,12 @@
-# main.py
 
-"""Main Entry Point.
+# Main Entry Point.
 
-Orchestrates the entire Browser Release Validation workflow:
-1. Detect installed browser versions.
-2. Identify which browsers have changed/updated since the last run.
-3. If changes are detected (or if it's the first run), run parallel tests via Selenium Server.
-4. Save results to results/report.txt and update stored_versions.json.
-"""
+# Orchestrates the entire Browser Release Validation workflow:
+# 1. Detect installed browser versions.
+# 2. Identify which browsers have changed/updated since the last run.
+# 3. If changes are detected (or if it's the first run), run parallel tests via Selenium Server.
+# 4. Save results to results/report.txt and update stored_versions.json.
+
 
 import os
 import datetime
@@ -29,10 +28,10 @@ def write_report(results, installed_versions):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
     report_lines = [
-        "==================================================",
+        " ",
         "      BROWSER RELEASE VALIDATION REPORT           ",
         f"      Executed At: {timestamp}                   ",
-        "==================================================\n",
+        "",
         "Installed Browser Versions Under Test:",
         f"  - Chrome:  {installed_versions.get('chrome', 'Not Found')}",
         f"  - Firefox: {installed_versions.get('firefox', 'Not Found')}",
